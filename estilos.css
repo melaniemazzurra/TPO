@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    text-align: center;
+}
+
+
+/* Estilo para los íconos de redes sociales en el pie de página */
+.social-icons img {
+    width: 30px; /* Tamaño de los íconos */
+    margin-right: 10px; /* Espaciado entre íconos */
+}
+
+
+/* Estilo cuando el mouse está sobre la imagen */
+.col {
+    transition: transform 0.3s ease-in-out;
+    /* Transición suave al aplicar transformación */
+    margin-bottom: 10px;
+    position: relative;
+    top: 10px;
+}
+
+.col:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* portada de la seccion mis cursos */
+.mis-cursos-portada {
+    position: relative;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.95);
+    padding: 50px 0;
+    background: url('https://images.pexels.com/photos/3780104/pexels-photo-3780104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover;
+    /* Reemplaza 'tu-imagen-de-fondo.jpg' con la ruta correcta de tu imagen */
+    opacity: 0.8;
+}
+
+.mis-cursos-portada h1,
+.mis-cursos-portada p {
+    position: relative;
+    z-index: 1;
+}
+
+.mis-cursos-portada h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.mis-cursos-portada p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+/* Estilo del buscador */
+#busqueda {
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    width: 400PX;
+    height: 38px;
+    font-size: 16px;
+    margin: 20px;
+    padding: 5px;
+}
+
+#busqueda::placeholder {
+    color: #808080;
+}
+
+
+/* Estilo de el desplegador de contenidos */
+.detalles {
+    display: none;
+    margin-top: 10px;
+}
+
+.contenidos-lista {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+}
+
+.contenidos-lista li {
+    margin-bottom: 5px;
+}
+
+/* footer */
+/* Estilo del footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info,
+.social-icons {
+    flex-basis: 45%;
+}
+
+/* Estilo de las imágenes en los íconos sociales */
+.social-icons img {
+    width: 50px;
+    margin: 0 5px;
+}
+
+/*Iniciar sesion*/
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.form-label {
+    color: #007bff;
+}
+
+.form-control {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #007bff;
+}
+
+.form-text {
+    color: #007bff;
+}
+
+.form-check-input {
+    background-color: #000;
+    border: 1px solid #007bff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+/*Estilo Registrarse*/
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+/*Que sea responsive con media query*/
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .mis-cursos-portada {
+        padding: 30px 10px;
+    }
+
+    .mis-cursos-portada h1 {
+        font-size: 1.8em;
+    }
+
+    .mis-cursos-portada p {
+        font-size: 1em;
+    }
+
+    #busqueda {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .detalles-lista {
+        padding-left: 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .social-icons {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .social-icons img {
+        width: 30px;
+        margin: 0 3px;
+    }
+}
